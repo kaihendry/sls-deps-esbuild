@@ -12,8 +12,8 @@ provider:
 
 functions:
   validateIsin:
-    handler: index.handler
+    handler: ./v1/foo/bar/handler.hello
     events:
       - http:
-          path: validate-isin/{isin}
+          path: /
           method: get
