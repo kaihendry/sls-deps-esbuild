@@ -1,0 +1,19 @@
+service: minimal-example
+
+plugins:
+  - serverless-esbuild
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: ap-southeast-1
+
+
+functions:
+  validateIsin:
+    handler: index.handler
+    events:
+      - http:
+          path: validate-isin/{isin}
+          method: get
