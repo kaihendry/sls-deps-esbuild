@@ -4,6 +4,9 @@ plugins:
   - serverless-esbuild
   - serverless-offline
 
+package:
+  individually: true
+
 provider:
   name: aws
   runtime: nodejs14.x
@@ -16,4 +19,10 @@ functions:
     events:
       - http:
           path: /
+          method: get
+  nolog:
+    handler: ./v1/foo/nolog/handler.hello
+    events:
+      - http:
+          path: /nolog
           method: get

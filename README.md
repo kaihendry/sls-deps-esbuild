@@ -1,5 +1,1 @@
-# FAILs
-
-	v1/foo/util/log.js:1:20: error: Could not resolve "lambda-log" (mark it as external to exclude it from the bundle, or surround it with try/catch to handle the failure at run-time)
-
-I'm not sure how to structure shared code.
+Still seems to be in the same Zip? https://s.natalian.org/2021-10-15/minimal-example-dev-nolog-b4e50c7e-13bf-47a4-81ab-cdae9090601f.zip
